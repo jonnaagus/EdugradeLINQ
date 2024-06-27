@@ -1,0 +1,159 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+/* Header styles */
+.navbar {
+    background-color: #007bff; /* Primary color */
+}
+
+.navbar-brand {
+    color: #fff; /* White text */
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: #fff; /* White text */
+}
+
+    .navbar-nav .nav-link:hover {
+        color: #f8f9fa; /* Light gray text on hover */
+    }
+
+.navbar-toggler-icon {
+    color: #fff; /* White color for the toggle icon */
+}
+
+/* Main content styles */
+.main-content {
+    background-color: #fff; /* White background */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    color: #007bff; /* Primary color */
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #333;
+    background-color: #fff;
+    border-collapse: collapse;
+}
+
+    .table th,
+    .table td {
+        padding: 0.75rem;
+        vertical-align: top;
+        border-top: 1px solid #dee2e6;
+    }
+
+    .table thead th {
+        vertical-align: bottom;
+        border-bottom: 2px solid #dee2e6;
+    }
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 123, 255, 0.1); /* Light blue stripe */
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(0, 123, 255, 0.15); /* Lighter blue on hover */
+}
+
+.btn {
+    color: #fff;
+    background-color: #007bff; /* Primary color */
+    border-color: #007bff; /* Primary color */
+    transition: background-color 0.3s ease;
+}
+
+    .btn:hover {
+        background-color: #0056b3; /* Darker blue on hover */
+    }
+
+.btn-success {
+    background-color: #28a745; /* Success color */
+    border-color: #28a745; /* Success color */
+}
+
+    .btn-success:hover {
+        background-color: #218838; /* Darker green on hover */
+    }
+
+.btn-warning {
+    background-color: #ffc107; /* Warning color */
+    border-color: #ffc107; /* Warning color */
+}
+
+    .btn-warning:hover {
+        background-color: #e0a800; /* Darker orange on hover */
+    }
+
+.btn-info {
+    background-color: #17a2b8; /* Info color */
+    border-color: #17a2b8; /* Info color */
+}
+
+    .btn-info:hover {
+        background-color: #138496; /* Darker cyan on hover */
+    }
+
+.btn-danger {
+    background-color: #dc3545; /* Danger color */
+    border-color: #dc3545; /* Danger color */
+}
+
+    .btn-danger:hover {
+        background-color: #c82333; /* Darker red on hover */
+    }
+
+.alert {
+    position: relative;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+
+.alert-success {
+    background-color: #d4edda; /* Success alert background */
+    border-color: #c3e6cb; /* Success alert border */
+    color: #155724; /* Success alert text */
+}
+
+.alert-danger {
+    background-color: #f8d7da; /* Danger alert background */
+    border-color: #f5c6cb; /* Danger alert border */
+    color: #721c24; /* Danger alert text */
+}
+
+/* Footer styles */
+.footer {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #f8f9fa; /* Light gray footer background */
+}
+
+    .footer .container {
+        text-align: center; /* Center align text */
+        font-size: 0.9rem;
+    }
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .main-content {
+        padding: 10px;
+    }
+}

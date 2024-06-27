@@ -1,0 +1,69 @@
+﻿@model UpdateProg1TeacherViewModel
+
+@{
+    ViewData["Title"] = "Uppdatera Lärare";
+}
+
+<h2 class="my-4">@ViewData["Title"]</h2>
+
+<form asp-action="UpdateTeacherForStudentProg1" method="post" class="needs-validation custom-form" novalidate>
+    <div class="mb-3">
+        <label for="selectedStudentId" class="form-label">Välj Student:</label>
+        <select asp-for="SelectedStudentId" class="form-select">
+            <option value="">Välj student...</option>
+            @foreach (var student in Model.Students)
+            {
+                <option value="@student.StudentId">@student.StudentFirstName</option>
+            }
+        </select>
+    </div>
+    <div class="mb-3">
+        <label for="selectedTeacherId" class="form-label">Välj Ny Lärare:</label>
+        <select asp-for="SelectedTeacherId" class="form-select">
+            <option value="">Välj lärare...</option>
+            @foreach (var teacher in Model.Teachers)
+            {
+                <option value="@teacher.TeacherId">@teacher.TeacherFirstName</option>
+            }
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary btn-block">Uppdatera</button>
+</form>
+
+@if (ViewData["Message"] != null)
+{
+    <div class="alert alert-success mt-4" role="alert">
+        @ViewData["Message"]
+    </div>
+}
+
+<style>
+    .custom-form {
+        max-width: 400px;
+        margin: auto;
+        padding: 20px;
+        background-color: #f8f9fa;
+        border: 1px solid #dee2e6;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .custom-form .form-label {
+        font-weight: bold;
+    }
+
+    .custom-form .form-select {
+        padding: .375rem .75rem;
+        font-size: 1rem;
+    }
+
+    .custom-form .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+        transition: background-color 0.3s ease;
+    }
+
+    .custom-form .btn-primary:hover {
+        background-color: #0056b3;
+    }
+</style>
